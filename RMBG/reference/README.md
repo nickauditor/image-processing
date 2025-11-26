@@ -1,7 +1,6 @@
 ---
 license: other
 license_name: bria-rmbg-2.0
-license_link: https://creativecommons.org/licenses/by-nc/4.0/deed.en
 pipeline_tag: image-segmentation
 tags:
 - remove background
@@ -14,7 +13,7 @@ tags:
 - transformers.js
 extra_gated_description: >-
   Bria AI Model weights are open source for non commercial use only, per the
-  provided [license](https://creativecommons.org/licenses/by-nc/4.0/deed.en).
+  provided license.
 extra_gated_heading: Fill in this form to immediatly access the model for non commercial use
 extra_gated_fields:
   Name: text
@@ -26,53 +25,6 @@ extra_gated_fields:
 ---
 
 # BRIA Background Removal v2.0 Model Card
-<p align="center"><img src="https://platform.bria.ai/assets/Bria-logo-5e0c53b1.svg" alt="BRIA Logo" width="200" /></p>
-
-<!-- RMBG Card wrapper -->
-<div class="rmbg-card" style="position: relative; border-radius: 12px; overflow: hidden;">
-
-  <!-- FIBO Promo Banner (Top) -->
-  <a
-    href="https://huggingface.co/briaai/FIBO"
-    target="_blank"
-    rel="noopener"
-    aria-label="Explore FIBO on Hugging Face"
-    style="
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: linear-gradient(90deg, #fff6b7 0%, #fde047 100%);
-      color: #1f2937;
-      text-decoration: none;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 600;
-      font-size: 13px;
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      z-index: 10;
-    ">
-    <img
-      src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
-      alt="Hugging Face"
-      width="18"
-      height="18"
-      style="display:block"
-    />
-    <span>✨ Discover <strong>FIBO</strong> on Hugging Face</span>
-  </a>
-
-  <!-- ... your RMBG content below ... -->
-<p align="center">
-         💜 <a href="https://go.bria.ai/46gzn20"><b>Bria AI</b></a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/briaai/">Hugging Face</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://blog.bria.ai/">Blog</a> &nbsp&nbsp 
-<br>
-🖥️ <a href="https://huggingface.co/spaces/briaai/BRIA-RMBG-2.0">Demo</a>&nbsp&nbsp| &nbsp&nbsp <a href="https://github.com/Bria-AI/RMBG-2.0">Github</a>&nbsp&nbsp
-</p>
 
 RMBG v2.0 is our new state-of-the-art background removal model significantly improves RMBG v1.4. The model is designed to effectively separate foreground from background in a range of
 categories and image types. This model has been trained on a carefully selected dataset, which includes:
@@ -86,35 +38,18 @@ Developed by BRIA AI, RMBG v2.0 is available as a source-available model for non
 
 Bria RMBG2.0 is availabe everywhere you build, either as source-code and weights, ComfyUI nodes or API endpoints.
 
-- **Purchase:** for commercial license [Contant us](https://bria.ai/contact-us).
-- **API Endpoint**: [Bria.ai](https://platform.bria.ai/console/api/image-editing), [fal.ai](https://fal.ai/models/fal-ai/bria/background/remove), [Replicate](https://replicate.com/bria/remove-background)
-- **ComfyUI**: [Use it in workflows](https://github.com/Bria-AI/ComfyUI-BRIA-API)
-- **GitHub**: [github.com/Bria-AI/RMBG-2.0](https://github.com/Bria-AI/RMBG-2.0)
-
-For more information, please visit our [website](https://bria.ai/).
-
-Join our [Discord community](https://discord.gg/Nxe9YW9zHS) for more information, tutorials, tools, and to connect with other users!
-
-[CLICK HERE FOR A DEMO](https://huggingface.co/spaces/briaai/BRIA-RMBG-2.0)
-
-
-
-![examples](t4.png)
-
 ## Model Details
 #####
 ### Model Description
 
-- **Developed by:** [BRIA AI](https://bria.ai/)
+- **Developed by:** BRIA AI
 - **Model type:** Background Removal 
-- **License:** [Creative Commons Attribution–Non-Commercial (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.en)
+- **License:** Creative Commons Attribution–Non-Commercial (CC BY-NC 4.0)
   - The model is released under a CC BY-NC 4.0 license for non-commercial use.
-  - Commercial use is subject to a commercial agreement with BRIA. Available [here](https://share-eu1.hsforms.com/2sj9FVZTGSFmFRibDLhr_ZAf4e04?utm_campaign=RMBG%202.0&utm_source=Hugging%20face&utm_medium=hyperlink&utm_content=RMBG%20Hugging%20Face%20purchase%20form)
-
+  - Commercial use is subject to a commercial agreement with BRIA. Available here.
 
 - **Model Description:** BRIA RMBG-2.0 is a dichotomous image segmentation model trained exclusively on a professional-grade dataset. The model output includes a single-channel 8-bit grayscale alpha matte, where each pixel value indicates the opacity level of the corresponding pixel in the original image. This non-binary output approach offers developers the flexibility to define custom thresholds for foreground-background separation, catering to varied use cases requirements and enhancing integration into complex pipelines.
-- **BRIA:** Resources for more information: [BRIA AI](https://bria.ai/)
-
+- **BRIA:** Resources for more information: BRIA AI.
 
 
 ## Training data
@@ -154,20 +89,10 @@ For clarity, we provide our data distribution according to different categories,
 ## Qualitative Evaluation
 Open source models comparison
 ![diagram](diagram1.png)
-![examples](collage5.png)
 
 ### Architecture
-RMBG-2.0 is developed on the [BiRefNet](https://github.com/ZhengPeng7/BiRefNet) architecture enhanced with our proprietary dataset and training scheme. This training data significantly improves the model’s accuracy and effectiveness for background-removal task.<br>
-If you use this model in your research, please cite:
+RMBG-2.0 is developed on the **BiRefNet** architecture enhanced with our proprietary dataset and training scheme. This training data significantly improves the model’s accuracy and effectiveness for background-removal task.<br>
 
-```
-@article{BiRefNet,
-  title={Bilateral Reference for High-Resolution Dichotomous Image Segmentation},
-  author={Zheng, Peng and Gao, Dehong and Fan, Deng-Ping and Liu, Li and Laaksonen, Jorma and Ouyang, Wanli and Sebe, Nicu},
-  journal={CAAI Artificial Intelligence Research},
-  year={2024}
-}
-```
 
 #### Requirements
 ```bash
