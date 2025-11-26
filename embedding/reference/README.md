@@ -11,7 +11,7 @@ inference: false
 
 ## Quick Start
 
- [Technical Report](https://arxiv.org/abs/2406.18587) 
+ **Technical Report**
 
 
 `nomic-embed-vision-v1.5` is a high performing vision embedding model that shares the same embedding space as nomic-embed-text-v1.5.
@@ -57,7 +57,7 @@ Click the Nomic Atlas map below to visualize a 100,000 sample CC3M comparing the
 
 ## Training Details
 
-We align our vision embedder to the text embedding by employing a technique similar to [LiT](https://arxiv.org/abs/2111.07991) but instead lock the text embedder!
+We align our vision embedder to the text embedding by employing a technique similar to **LiT** but instead lock the text embedder!
 
 For more details, see the Nomic Embed Vision Technical Report (soon to be released!) and corresponding blog post.
 
